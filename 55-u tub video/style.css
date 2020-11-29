@@ -1,0 +1,78 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat,Philosopher,Roboto;
+    
+}
+
+
+
+/*========================   Nav manu ==================*/
+
+.video-play-btn.mfp-iframe {
+  display: block;
+  background-size: 115%;
+  background-position: center;
+  background-color: #ddd;
+  height: 450px;
+  display: table;
+  width: 100%;
+transition: .3s;
+}
+.video-play-btn:hover{
+	background-size: 120%;
+	
+}
+.video-overlay {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 50px;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  transform: scale(.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+.video-overlay::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #26395a;
+  content: "";
+  z-index: -1;
+  opacity: .6;
+}
+.video-play-btn:hover {
+  color: #fff;
+}
+.box-plus {
+  height: 30px;
+  width: 30px;
+  border: 2px solid;
+  border-radius: 50%;
+  line-height: 27px;
+  margin-bottom: 19px;
+}
+.video-overlay p {
+  opacity: .7;
+}
+.video-overlay p.video-top-desic {
+  opacity: 1;
+}
+.video-play-btn:hover .video-overlay {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+
+
+
+
+
